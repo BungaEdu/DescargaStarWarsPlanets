@@ -52,7 +52,7 @@ public class Ejercicio6 {
                 i++;
             }
         }
-        i = 0;
+        i = 0;//
         for (Planet x : outWithoutUnknown) {
             if (x.getTerrain().equals(terreno)) {
                 out[i] = x;

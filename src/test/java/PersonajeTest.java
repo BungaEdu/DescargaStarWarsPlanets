@@ -42,7 +42,7 @@ public class PersonajeTest {
         Planet [] actual = ej.obtenerMasPobladosQue(200000);
         Assertions.assertArrayEquals(esperado,actual);
     }
-*/
+ */
 
     @Test
     public void test3() {
