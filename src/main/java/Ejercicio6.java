@@ -22,7 +22,7 @@ public class Ejercicio6 {
         return quitarNulos(out, i);
     }
 
-    public Planet[] obtenerMasPobladosQue(long poblacion) {
+    public Planet[] obtenerMasPobladosQue(String poblacion) {
         Planet[] outWithoutUnknown = new Planet[planets.obtenerTodos().length];
         Planet[] out = new Planet[planets.obtenerTodos().length];
         int i = 0;
@@ -34,7 +34,7 @@ public class Ejercicio6 {
         }
         i = 0;
         for (Planet x : outWithoutUnknown) {
-            if (Integer.parseInt(x.getPopulation()) == poblacion) {
+            if (x.getPopulation().equals(poblacion)) {
                 out[i] = x;
                 i++;
             }
@@ -52,7 +52,7 @@ public class Ejercicio6 {
                 i++;
             }
         }
-        i = 0;//
+        i = 0;
         for (Planet x : outWithoutUnknown) {
             if (x.getTerrain().equals(terreno)) {
                 out[i] = x;
